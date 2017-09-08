@@ -1,0 +1,469 @@
+@charset "UTF-8";
+.row_clear:after, #container:after, .listItems:after, .header:after, .body-page:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+body {
+  background: url("../images/background.jpg") no-repeat fixed;
+  color: #000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  height: 550px;
+}
+
+a {
+  -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  color: #D3E2E3;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #D3E2E3;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", meiryo, sans-serif;
+  font-weight: normal;
+}
+
+button:focus, input:focus, a:focus {
+  outline: none;
+}
+
+/*------------------- Wraper -------------------*/
+#container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/*------------------- Typography -------------------*/
+.description {
+  font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: justify;
+}
+
+.title_h2 {
+  text-align: center;
+}
+
+.title_h5 {
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", meiryo, sans-serif;
+}
+
+.title_h6 {
+  font-size: 14px;
+}
+
+/*------------------- Form -------------------*/
+.btn {
+  text-align: center;
+}
+
+/*------------------- List -------------------*/
+.list_fade li {
+  display: none;
+}
+
+.list_fade2 li {
+  display: none;
+}
+
+.fadeTop {
+  opacity: 0;
+  -webkit-transform: translate(0px, 100px);
+  -ms-transform: translate(0px, 100px);
+  transform: translate(0px, 100px);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fadeTop.ef-slide {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+/*======================================
+        Header
+======================================*/
+.header {
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.header .paralax {
+  background: url("../images/img_woman_01.png") no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 1990px;
+  z-index: -1;
+  right: -100px;
+  margin-right: -100px;
+}
+
+.header .banner-top {
+  margin-top: -15px;
+}
+
+/*======================================
+        body-page
+======================================*/
+.body-page {
+  background: rgba(255, 255, 255, 0.7);
+  padding-bottom: 100px;
+  position: relative;
+}
+
+/*======================================
+        section
+======================================*/
+.section-01 {
+  padding-bottom: 125px;
+}
+
+.section-01 .btn {
+  padding-top: 55px;
+}
+
+.section-02 .title_h2 {
+  padding-bottom: 65px;
+}
+
+.section-02 .img-section {
+  margin-left: -40px;
+}
+
+.section-03 {
+  padding-top: 190px;
+}
+
+.section-03 .title_h2 {
+  padding-bottom: 62px;
+}
+
+.section-03 .img-section {
+  width: 705px;
+  height: 458px;
+  margin: auto;
+  position: relative;
+  background: url("../images/img_woman_03.png") no-repeat center;
+}
+
+.section-03 .img-section li {
+  position: absolute;
+}
+
+.section-03 .img-section li:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.section-03 .img-section li:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.section-03 .img-section li:nth-child(3) {
+  left: 0;
+  bottom: 0;
+}
+
+.section-03 .img-section li:nth-child(4) {
+  right: 0;
+  bottom: 0;
+}
+
+.section-04 {
+  padding-top: 150px;
+  position: relative;
+}
+
+.section-04 .title_h2 {
+  padding-bottom: 100px;
+}
+
+.section-04 .img-section {
+  position: relative;
+  width: 741px;
+  height: 837px;
+  margin: auto;
+  background: url("../images/img_water_01.png") no-repeat center;
+}
+
+.section-04 .img-section li {
+  position: absolute;
+}
+
+.section-04 .img-section li:nth-child(1) {
+  top: 40px;
+  left: 15px;
+}
+
+.section-04 .img-section li:nth-child(2) {
+  top: 40px;
+  right: 10px;
+}
+
+.section-04 .img-section li:nth-child(3) {
+  top: 260px;
+  right: -54px;
+}
+
+.section-04 .img-section li:nth-child(4) {
+  right: 37px;
+  bottom: 135px;
+}
+
+.section-04 .img-section .note-content {
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.section-04 .img-section .note-content p {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.section-05 {
+  padding-top: 165px;
+  padding-bottom: 230px;
+}
+
+.section-05 .title_h2 {
+  padding-bottom: 150px;
+}
+
+.section-06 {
+  padding-bottom: 110px;
+  position: relative;
+}
+
+.section-06 .paralax2 {
+  background: url("../images/img_woman_02.png") no-repeat;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 1290px;
+  z-index: 0;
+  right: -40px;
+  margin-right: -100px;
+}
+
+.section-06 .title_h2 {
+  padding-bottom: 70px;
+}
+
+.section-06 .content01 {
+  position: relative;
+  left: 48px;
+  padding-bottom: 140px;
+  width: 594px;
+  background: url("../images/img_man.png") no-repeat top right;
+}
+
+.section-06 .content01 .description {
+  width: 364px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.section-06 .content02 {
+  background: url("../images/cover_01.png") no-repeat top left;
+  position: relative;
+  width: 895px;
+  height: 427px;
+  left: -38px;
+}
+
+.section-06 .content02 .right-desc {
+  position: absolute;
+  right: 0;
+}
+
+.section-06 .content02 .title_h5 {
+  padding-top: 18px;
+}
+
+.section-06 .content02 .description {
+  text-align: justify;
+  width: 353px;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.section-06 .content02 .description span {
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.section-07 {
+  background: url("../images/img_background_01.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 735px;
+  padding-top: 48px;
+}
+
+.section-07 .content01 {
+  position: absolute;
+  padding: 23px 20px;
+  top: 154px;
+  left: 40px;
+  background: rgba(255, 255, 255, 0.65);
+  width: 368px;
+}
+
+.section-07 .description {
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.section-07 .img-section {
+  position: absolute;
+  top: 147px;
+  right: 80px;
+}
+
+.section-08 {
+  position: relative;
+  padding-bottom: 180px;
+}
+
+.section-08 .content01 {
+  position: relative;
+  width: 885px;
+  margin-top: 110px;
+  left: 45px;
+  padding-bottom: 95px;
+  background: url("../images/cover_03.png") no-repeat top right;
+}
+
+.section-08 .content01 .description {
+  width: 382px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.section-08 .content02 {
+  background: url("../images/cover_04.png") no-repeat top left;
+  position: relative;
+  width: 885px;
+  height: 427px;
+  left: -24px;
+}
+
+.section-08 .content02 .right-desc {
+  position: absolute;
+  right: 0;
+}
+
+.section-08 .content02 .description {
+  text-align: justify;
+  width: 382px;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.section-08 .content02 .description span {
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.section-08 .content03 {
+  padding-top: 75px;
+}
+
+.section-09 {
+  background: #D3E2E3;
+  padding-bottom: 40px;
+  border-bottom: 13px solid #A4B0BD;
+}
+
+.section-09 .title_h2 {
+  position: relative;
+  top: -32px;
+}
+
+.section-09 .listItems {
+  padding: 0 50px;
+}
+
+.section-09 .listItems.first {
+  padding-top: 40px;
+}
+
+.section-09 .listItems.first .items {
+  padding-top: 0px;
+  padding-bottom: 40px;
+  border-bottom: 1px dotted #112f53;
+}
+
+.section-09 .listItems h5 {
+  padding: 20px 0;
+}
+
+.section-09 .listItems h6 {
+  padding-top: 20px;
+}
+
+.section-09 .listItems .items {
+  width: 50%;
+  float: left;
+  padding-top: 40px;
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+.section-09 .listItems .items:last-child {
+  border-left: 1px dotted #112f53;
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+.banner {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}

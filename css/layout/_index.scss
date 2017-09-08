@@ -1,0 +1,292 @@
+/*======================================
+        body-page
+======================================*/
+.body-page {
+    background: rgba(255, 255, 255, 0.7);
+    padding-bottom: 100px;
+    position: relative;
+    @extend %clearfix;
+}
+/*======================================
+        section
+======================================*/
+.section-01 {
+    padding-bottom: 125px;
+    .btn {
+        padding-top: 55px;
+    }
+}
+
+.section-02 {
+    .title_h2 {
+        padding-bottom: 65px;
+    }
+    .img-section {
+        margin-left: -40px;
+    }
+}
+
+.section-03 {
+    padding-top: 190px;
+    .title_h2 {
+        padding-bottom: 62px;
+    }
+    .img-section {
+        width: 705px;
+        height: 458px;
+        margin: auto;
+        position: relative;
+        background: url('../images/img_woman_03.png') no-repeat center;
+        li {
+            position: absolute;
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+            }
+            &:nth-child(2) {
+                top: 0;
+                right: 0;
+            }
+            &:nth-child(3) {
+                left: 0;
+                bottom: 0;
+            }
+            &:nth-child(4) {
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.section-04 {
+    padding-top: 150px;
+    position: relative;
+    .title_h2 {
+        padding-bottom: 100px;
+    }
+    // .title_prd {
+    //     position: absolute;
+    //     z-index: 9;
+    //     top: 340px;
+    //     left: 100px;
+    // }
+    .img-section {
+        position: relative;
+        width: 741px;
+        height: 837px;
+        margin: auto;
+        background: url('../images/img_water_01.png') no-repeat center;
+        li {
+            position: absolute;
+            &:nth-child(1) {
+                top: 40px;
+                left: 15px;
+            }
+            &:nth-child(2) {
+                top: 40px;
+                right: 10px;
+            }
+            &:nth-child(3) {
+                top: 260px;
+                right: -54px;
+            }
+            &:nth-child(4) {
+                right: 37px;
+                bottom: 135px;
+            }
+        }
+        .note-content {
+            position: absolute;
+            left: 40px;
+            bottom: 0;
+            font-size: 18px;
+            line-height: 1.4;
+            p {
+                padding-top: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.section-05 {
+    padding-top: 165px;
+    padding-bottom: 230px;
+    .title_h2 {
+        padding-bottom: 150px;
+    }
+}
+.section-06 {
+    padding-bottom: 110px;
+    position: relative;
+    .paralax2 {
+        background: url('../images/img_woman_02.png')  no-repeat ;
+        // background: red;
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        height: 1290px;
+        z-index: 0;
+        right: -40px;
+        margin-right: -100px;
+    }
+    .title_h2 {
+        padding-bottom: 70px;
+    }
+    .content01 {
+        position: relative;
+        left: 48px;
+        padding-bottom: 140px;
+        width: 594px;
+        background: url('../images/img_man.png') no-repeat top right;
+        .description {
+            width: 364px;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 34px;
+        }
+    }
+    .content02 {
+        background: url('../images/cover_01.png') no-repeat top left;
+        position: relative;
+        width: 895px;
+        height: 427px;
+        left: -38px;
+        .right-desc {
+            position: absolute;
+            right: 0;
+        }
+        .title_h5 {
+            padding-top: 18px;
+        }
+        .description {
+            text-align: justify;
+            width: 353px;
+            font-size: 20px;
+            line-height: 34px;
+            span {
+                display: inline-block;
+                padding-top: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.section-07 {
+    background: url('../images/img_background_01.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: 735px;
+    padding-top: 48px;
+    .content01 {
+        position: absolute;
+        padding: 23px 20px;
+        top: 154px;
+        left: 40px;
+        background: rgba(255, 255, 255, 0.65);
+        width: 368px;
+    }
+    .description {
+        padding-top: 10px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .img-section {
+        position: absolute;
+        top: 147px;
+        right: 80px;
+    }
+}
+.section-08 {
+    position: relative;
+    padding-bottom: 180px;
+    .content01 {
+        position: relative;
+        width: 885px;
+        margin-top: 110px;
+        left: 45px;
+        padding-bottom: 95px;
+        background: url('../images/cover_03.png') no-repeat top right;
+        .description {
+            width: 382px;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 34px;
+        }
+    }
+    .content02 {
+        background: url('../images/cover_04.png') no-repeat top left;
+        position: relative;
+        width: 885px;
+        height: 427px;
+        left: -24px;
+        .right-desc {
+            position: absolute;
+            right: 0;
+        }
+        .title_h3 {
+
+        }
+        .description {
+            text-align: justify;
+            width: 382px;
+            font-size: 20px;
+            line-height: 34px;
+            span {
+                display: inline-block;
+                padding-top: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+    .content03 {
+        padding-top: 75px;
+    }
+}
+.section-09 {
+    background: $color-primary;
+    padding-bottom: 40px;
+    border-bottom: 13px solid $color-1;
+    .title_h2 {
+        position: relative;
+        top: -32px;
+    }
+    .listItems {
+        padding: 0 50px;
+        &.first {
+            padding-top: 40px;
+            .items {
+                padding-top: 0px;
+                padding-bottom: 40px;
+                border-bottom: 1px dotted rgb(17, 47, 83);
+            }
+        }
+        h5 {
+            padding: 20px 0;
+        }
+        h6 {
+            padding-top: 20px;
+        }
+        .items {
+            width: 50%;
+            float: left;
+            padding-top: 40px;
+            padding-left: 0px;
+            padding-right: 40px;
+            &:last-child {
+                border-left: 1px dotted rgb(17, 47, 83);
+                padding-left: 40px;
+                padding-right: 0;
+            }
+        }
+    }
+}
+.banner {
+    padding-top: 110px;
+    padding-bottom: 100px;
+
+}
