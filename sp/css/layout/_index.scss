@@ -1,0 +1,290 @@
+/*======================================
+        body-page
+======================================*/
+.body-page {
+    // background: rgba(255, 255, 255, 0.7);
+    background: #fff;
+    padding-bottom: 50px;
+    // padding-bottom: 100px;
+    position: relative;
+    @extend %clearfix;
+}
+/*======================================
+        section
+======================================*/
+.section-01 {
+    padding-bottom: 45px;
+    // padding-bottom: 90px;
+    .title_h2 {
+        padding-bottom: 30px;
+        // padding-bottom: 60px;
+    }
+    .banner_cent {
+        @extend %padding_title;
+    }
+    .btn {
+        @extend %padding_title;
+        padding-top: 30px;
+        // padding-top: 55px;
+    }
+}
+
+.section-02 {
+    .title_h2 {
+        padding-bottom: 40px;
+        // padding-bottom: 80px;
+    }
+    .img-section {
+        @extend %padding_title;
+    }
+}
+
+.section-03 {
+    padding-top: 68px;
+    // padding-top: 135px;
+    @extend %padding_title;
+    .title_h2 {
+        padding-bottom: 45px;
+        // padding-bottom: 90px;
+    }
+    .img-section {
+        height: 547px;
+        margin: auto;
+        position: relative;
+        background: url('../images/img_woman_02.png') no-repeat center;
+        li {
+            position: absolute;
+            width: 45%;
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+            }
+            &:nth-child(2) {
+                top: 0;
+                right: 0;
+            }
+            &:nth-child(3) {
+                left: 0;
+                bottom: 0;
+            }
+            &:nth-child(4) {
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.section-04 {
+    padding-top: 55px;
+    // padding-top: 115px;
+    position: relative;
+    .title_h2 {
+        padding-bottom: 25px;
+        // padding-bottom: 50px;
+    }
+    .img-section {
+        position: relative;
+        height: 977px;
+        margin: auto;
+        background: url('../images/img_water_01.png') no-repeat center;
+        li {
+            width: 30%;
+            position: absolute;
+            &:nth-child(1) {
+                top: 130px;
+                left: 15px;
+            }
+            &:nth-child(2) {
+                top: 130px;
+                right: 80px;
+            }
+            &:nth-child(3) {
+                top: 352px;
+                right: 0px;
+                // right: -10px;
+            }
+            &:nth-child(4) {
+                right: 37px;
+                bottom: 177px;
+            }
+        }
+        .note-content {
+            position: absolute;
+            left: 40px;
+            bottom: 0;
+            font-size: 10px;
+            line-height: 1.4;
+            p {
+                padding-top: 12px;
+                font-size: 9px;
+                // font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.section-05 {
+    padding-top: 40px;
+    padding-bottom: 57px;
+    // padding-top: 80px;
+    // padding-bottom: 114px;
+    .title_h2 {
+        padding-bottom: 58px;
+        // padding-bottom: 105px;
+    }
+}
+.section-06 {
+    // padding-bottom: 110px;
+    padding-bottom: 55px;
+    position: relative;
+    .paralax2 {
+        position: absolute;
+        top: 185px;
+        z-index: 0;
+        right: 0px;
+        // right: -10px;
+        width: 50%;
+    }
+    .title_h2 {
+        padding-bottom: 35px;
+        // padding-bottom: 70px;
+    }
+    .img-man {
+        margin-left: 5%;
+        width: 45%;
+    }
+    .content01 {
+        position: relative;
+        padding-top: 38px;
+        padding-bottom: 60px;
+        // padding-bottom: 120px;
+        @extend %padding_title;
+        .title_h3 {
+            padding-bottom: 20px;
+            // padding-bottom: 40px;
+        }
+        // .description {
+        //     text-align: justify;
+        //     font-size: 20px;
+        //     line-height: 34px;
+        // }
+    }
+    .content02 {
+        position: relative;
+        .right-desc {
+            padding-top: 50px;
+            @extend %padding_title;
+            .title_h3 {
+                padding-bottom: 23px;
+                // padding-bottom: 45px;
+            }
+        }
+        .title_h5 {
+            padding-top: 18px;
+        }
+        .description {
+            // text-align: justify;
+            // font-size: 20px;
+            // line-height: 34px;
+            span {
+                display: inline-block;
+                padding-top: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.section-07 {
+    position: relative;
+    // .wrapSection {
+    //     padding-top: 48px;
+    //     height: 672px;
+    //     background: url('../images/background_02.jpg') no-repeat center;
+    //     // background-size: 100%;
+    // }
+    .title_h3 {
+        padding-bottom: 19px;
+    }
+    .content01 {
+        @extend %padding_title;
+        padding: 23px 20px;
+    }
+    .description {
+        // text-align: justify;
+        // font-size: 20px;
+        // line-height: 34px;
+    }
+    .img-section {
+        width: 65%;
+        position: absolute;
+        top: 30%;
+        left: 8%;
+    }
+}
+.section-08 {
+    position: relative;
+    // padding-bottom: 150px;
+    padding-bottom: 75px;
+    @extend %padding_title;
+    .title_h3 {
+        padding-top: 15px;
+        padding-bottom: 19px;
+        // padding-bottom: 35px;
+    }
+    .content01 {
+        position: relative;
+        padding-bottom: 54px;
+        // padding-bottom: 108px;
+    }
+    .content02 {
+        .right-desc {
+        }
+        .description {
+            span {
+                display: inline-block;
+                padding-top: 10px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+    .content03 {
+        // padding-top: 140px;
+        padding-top: 70px;
+    }
+}
+.section-09 {
+    background: $color-primary;
+    .title_h2 {
+        position: relative;
+        top: -16px;
+    }
+    .listItems {
+        // padding: 0 50px;
+        h5 {
+            padding: 20px 0;
+        }
+        h6 {
+            padding-top: 20px;
+        }
+        .items {
+            padding: 28px 5%;
+            // padding: 56px 46px;
+            border-top: 1px dotted rgb(17, 47, 83);
+        }
+    }
+}
+.banner {
+    padding-top: 68px;
+    padding-bottom: 28px;
+    // padding-top: 135px;
+    // padding-bottom: 55px;
+    .title_h2 {
+        padding-bottom: 60px;
+    }
+    .banner_cent {
+        @extend %padding_title;
+    }
+}

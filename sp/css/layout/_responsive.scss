@@ -1,0 +1,17 @@
+/*-----------------------
+        Responsive for device < 780px
+-----------------------------------------*/
+@media screen and (max-width: 420px) {
+    .title_pd_sp {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .section-06 {
+        .title_h2 {
+            padding-bottom: 35px;
+        }
+        .paralax2 {
+            top: 6%;
+        }
+    }
+}
