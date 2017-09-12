@@ -6,6 +6,61 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+    .section-03 {
+        .img-section {
+            height: 270px;
+            background-size: contain;
+            li {
+                position: absolute;
+                width: 35%;
+                &:nth-child(1) {
+                    top: 0;
+                    left: 0;
+                }
+                &:nth-child(2) {
+                    top: 0;
+                    right: 4%;
+                }
+                &:nth-child(3) {
+                    left: 0;
+                    bottom: 0;
+                }
+                &:nth-child(4) {
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    .section-04 {
+        .img-section {
+            height: 500px;
+            background-size: contain;
+            li {
+                width: 25%;
+                &:nth-child(1) {
+                    top: 9%;
+                    width: 22%;
+                }
+                &:nth-child(2) {
+                    top: 65px;
+                    right: 6%;
+                }
+                &:nth-child(3) {
+                    top: 36%;
+                    right: 1%;
+                    // right: -10px;
+                }
+                &:nth-child(4) {
+                    right: 7%;
+                    bottom: 20%;
+                }
+            }
+            .note-content {
+                left: 5%;
+            }
+        }
+    }
     .section-06 {
         .title_h2 {
             padding-bottom: 35px;

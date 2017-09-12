@@ -62,9 +62,9 @@ button:focus, input:focus, a:focus {
 
 /*------------------- Typography -------------------*/
 .description {
-  font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif;
-  font-size: 14px;
-  line-height: 34px;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: 16px;
+  line-height: 28px;
   text-align: justify;
 }
 
@@ -79,7 +79,7 @@ button:focus, input:focus, a:focus {
 }
 
 .title_h6 {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /*------------------- Form -------------------*/
@@ -126,7 +126,7 @@ button:focus, input:focus, a:focus {
         section
 ======================================*/
 .section-01 {
-  padding-bottom: 45px;
+  padding-bottom: 80px;
 }
 
 .section-01 .title_h2 {
@@ -150,9 +150,9 @@ button:focus, input:focus, a:focus {
 }
 
 .section-03 .img-section {
+  position: relative;
   height: 547px;
   margin: auto;
-  position: relative;
   background: url("../images/img_woman_02.png") no-repeat center;
 }
 
@@ -195,6 +195,7 @@ button:focus, input:focus, a:focus {
   height: 977px;
   margin: auto;
   background: url("../images/img_water_01.png") no-repeat center;
+  background-size: cover;
 }
 
 .section-04 .img-section li {
@@ -203,7 +204,7 @@ button:focus, input:focus, a:focus {
 }
 
 .section-04 .img-section li:nth-child(1) {
-  top: 130px;
+  top: 75px;
   left: 15px;
 }
 
@@ -237,7 +238,7 @@ button:focus, input:focus, a:focus {
 }
 
 .section-05 {
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 57px;
 }
 
@@ -298,6 +299,12 @@ button:focus, input:focus, a:focus {
   padding-top: 10px;
   font-size: 15px;
   font-weight: bold;
+}
+
+.section-06 .content02 .description .col {
+  font-size: .5em;
+  position: relative;
+  bottom: 6px;
 }
 
 .section-07 {
@@ -383,6 +390,56 @@ button:focus, input:focus, a:focus {
   .title_pd_sp {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .section-03 .img-section {
+    height: 270px;
+    background-size: contain;
+  }
+  .section-03 .img-section li {
+    position: absolute;
+    width: 35%;
+  }
+  .section-03 .img-section li:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  .section-03 .img-section li:nth-child(2) {
+    top: 0;
+    right: 4%;
+  }
+  .section-03 .img-section li:nth-child(3) {
+    left: 0;
+    bottom: 0;
+  }
+  .section-03 .img-section li:nth-child(4) {
+    right: 0;
+    bottom: 0;
+  }
+  .section-04 .img-section {
+    height: 500px;
+    background-size: contain;
+  }
+  .section-04 .img-section li {
+    width: 25%;
+  }
+  .section-04 .img-section li:nth-child(1) {
+    top: 9%;
+    width: 22%;
+  }
+  .section-04 .img-section li:nth-child(2) {
+    top: 65px;
+    right: 6%;
+  }
+  .section-04 .img-section li:nth-child(3) {
+    top: 36%;
+    right: 1%;
+  }
+  .section-04 .img-section li:nth-child(4) {
+    right: 7%;
+    bottom: 20%;
+  }
+  .section-04 .img-section .note-content {
+    left: 5%;
   }
   .section-06 .title_h2 {
     padding-bottom: 35px;

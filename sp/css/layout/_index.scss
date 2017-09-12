@@ -13,7 +13,7 @@
         section
 ======================================*/
 .section-01 {
-    padding-bottom: 45px;
+    padding-bottom: 80px;
     // padding-bottom: 90px;
     .title_h2 {
         padding-bottom: 30px;
@@ -48,9 +48,9 @@
         // padding-bottom: 90px;
     }
     .img-section {
+        position: relative;
         height: 547px;
         margin: auto;
-        position: relative;
         background: url('../images/img_woman_02.png') no-repeat center;
         li {
             position: absolute;
@@ -88,11 +88,13 @@
         height: 977px;
         margin: auto;
         background: url('../images/img_water_01.png') no-repeat center;
+        background-size: cover;
         li {
             width: 30%;
             position: absolute;
             &:nth-child(1) {
-                top: 130px;
+                top: 75px;
+                // top: 130px;
                 left: 15px;
             }
             &:nth-child(2) {
@@ -125,7 +127,7 @@
     }
 }
 .section-05 {
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 57px;
     // padding-top: 80px;
     // padding-bottom: 114px;
@@ -192,6 +194,11 @@
                 padding-top: 10px;
                 font-size: 15px;
                 font-weight: bold;
+            }
+            .col {
+                font-size: .5em;
+                position:relative;
+                bottom:6px;
             }
         }
     }
