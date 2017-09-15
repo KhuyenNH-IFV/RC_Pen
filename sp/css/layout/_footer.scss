@@ -1,7 +1,43 @@
 /*======================================
         Footer
 ======================================*/
-// .footer {
-//     position: relative;
-//     margin-top: -50px;
-// }
+.footer {
+    position: relative;
+    background: $color-2;
+    .footerIn {
+        padding: 30px 0 20px;
+        max-width: 780px;
+        width: 100%;
+        margin: auto;
+    }
+    .link-footer {
+        padding-top: 60px;
+        padding-bottom: 50px;
+        ul {
+            display: table;
+            margin: auto;
+            li {
+                display: table-cell;
+                vertical-align: bottom;
+                padding: 0 15px;
+                border-right: 1px solid $color-a;
+                &:first-child {
+                    border-left: 1px solid $color-a;
+                }
+                &:not(:first-child) {
+                    padding-bottom: 4px;
+                }
+                a {
+                    color: $color-a;
+                }
+            }
+        }
+        .pt_20 {
+            padding-top: 20px;
+        }
+    }
+    .copyright {
+        text-align: center;
+        color: $color-a;
+    }
+}

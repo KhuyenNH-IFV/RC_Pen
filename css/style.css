@@ -13,7 +13,6 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
-  padding-bottom: 100px;
 }
 
 body:before {
@@ -64,7 +63,7 @@ button:focus, input:focus, a:focus {
 
 /*------------------- Typography -------------------*/
 .description {
-  font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
   font-size: 20px;
   line-height: 34px;
   text-align: justify;
@@ -72,6 +71,10 @@ button:focus, input:focus, a:focus {
 
 .title_h2 {
   text-align: center;
+}
+
+.title_h3 {
+  margin-bottom: 16px;
 }
 
 .title_h5 {
@@ -318,6 +321,7 @@ button:focus, input:focus, a:focus {
 
 .section-06 .content02 .title_h5 {
   padding-top: 18px;
+  line-height: 1.4;
 }
 
 .section-06 .content02 .description {
@@ -332,6 +336,12 @@ button:focus, input:focus, a:focus {
   padding-top: 10px;
   font-size: 15px;
   font-weight: bold;
+}
+
+.section-06 .content02 .description .cap {
+  font-size: 0.5em;
+  position: relative;
+  bottom: 11px;
 }
 
 .section-07 {
@@ -442,7 +452,7 @@ button:focus, input:focus, a:focus {
 }
 
 .section-09 .listItems h5 {
-  padding: 20px 0;
+  padding: 10px 0 20px;
 }
 
 .section-09 .listItems h6 {
@@ -466,4 +476,49 @@ button:focus, input:focus, a:focus {
 .banner {
   padding-top: 110px;
   padding-bottom: 100px;
+}
+
+/*======================================
+        Footer
+======================================*/
+.footer {
+  position: relative;
+  background: #102F53;
+  margin-top: 100px;
+}
+
+.footer .footerIn {
+  padding: 16px 0;
+  width: 900px;
+  margin: auto;
+}
+
+.footer .link-footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.footer .link-footer ul {
+  display: table;
+  margin: auto;
+}
+
+.footer .link-footer ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 0 15px;
+  border-right: 1px solid #ffffff;
+}
+
+.footer .link-footer ul li:first-child {
+  border-left: 1px solid #ffffff;
+}
+
+.footer .link-footer ul li:not(:first-child) {
+  padding-bottom: 4px;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #ffffff;
 }

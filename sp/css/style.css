@@ -17,7 +17,6 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
-  padding-bottom: 100px;
 }
 
 a {
@@ -64,7 +63,8 @@ button:focus, input:focus, a:focus {
 .description {
   font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 26px;
+  letter-spacing: .03em;
   text-align: justify;
 }
 
@@ -151,7 +151,7 @@ button:focus, input:focus, a:focus {
 
 .section-03 .img-section {
   position: relative;
-  height: 547px;
+  height: 658px;
   margin: auto;
   background: url("../images/img_woman_02.png") no-repeat center;
 }
@@ -383,6 +383,59 @@ button:focus, input:focus, a:focus {
   padding-bottom: 60px;
 }
 
+/*======================================
+        Footer
+======================================*/
+.footer {
+  position: relative;
+  background: #102F53;
+}
+
+.footer .footerIn {
+  padding: 30px 0 20px;
+  max-width: 780px;
+  width: 100%;
+  margin: auto;
+}
+
+.footer .link-footer {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.footer .link-footer ul {
+  display: table;
+  margin: auto;
+}
+
+.footer .link-footer ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 0 15px;
+  border-right: 1px solid #ffffff;
+}
+
+.footer .link-footer ul li:first-child {
+  border-left: 1px solid #ffffff;
+}
+
+.footer .link-footer ul li:not(:first-child) {
+  padding-bottom: 4px;
+}
+
+.footer .link-footer ul li a {
+  color: #ffffff;
+}
+
+.footer .link-footer .pt_20 {
+  padding-top: 20px;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #ffffff;
+}
+
 /*-----------------------
         Responsive for device < 780px
 -----------------------------------------*/
@@ -446,6 +499,49 @@ button:focus, input:focus, a:focus {
   }
   .section-06 .paralax2 {
     top: 6%;
+  }
+  /*------------------- Footer -------------------*/
+  .footer .link-footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .footer .link-footer ul {
+    display: block;
+    margin: auto;
+    border-top: 1px solid #ffffff;
+  }
+  .footer .link-footer ul:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+  }
+  .footer .link-footer ul li {
+    line-height: 1.6;
+    padding: 0;
+    float: left;
+    display: block;
+    width: 50%;
+    min-height: 65px;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff;
+  }
+  .footer .link-footer ul li:nth-child(even) {
+    border-left: 1px solid #ffffff;
+  }
+  .footer .link-footer ul li:first-child {
+    border-left: 0;
+  }
+  .footer .link-footer ul li:not(:first-child) {
+    padding-bottom: 4px;
+  }
+  .footer .link-footer ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+  .footer .link-footer .pt_20 {
+    padding-top: 0;
   }
 }
 

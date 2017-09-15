@@ -15,7 +15,7 @@
 // Typography
 /*------------------- Typography -------------------*/
 .description {
-    font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
     font-size: 20px;
     line-height: 34px;
     text-align: justify;
@@ -28,10 +28,7 @@
     text-align: center;
 }
 .title_h3 {
-    // font-size: 24px;
-    // line-height: 1.8;
-    // color: $color-primary;
-    // font-weight: bold;
+    margin-bottom:16px;
 }
 .title_h5 {
     font-size: 15px;
